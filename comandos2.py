@@ -6,8 +6,7 @@ def run_command(command):
 # Importar la aplicación
 run_command("git clone https://github.com/CDPS-ETSIT/practica_creativa2.git")
 #Compilar y empaquetar los ficheros necesarios ejecutando, dentro de la ruta src/reviews, el siguiente comando:
-run_command('cd practica_creativa2/bookinfo/src/reviews && docker run --rm -u root -v "$(pwd)":/home/gradle/project -w /home/gradle/project gradle:4.8.1 gradle clean build')
-run_command('docker run --rm -u root -v "$(pwd)":/home/gradle/project -w /home/gradle/project gradle:4.8.1 gradle clean build')
+run_command ('docker run --rm -u root -v "$(pwd)/practica_creativa2/bookinfo/src/reviews":/home/gradle/project -w /home/gradle/project gradle:4.8.1 gradle clean build')
 
 
 # Crear las imágenes de cada uno de los servicios de acuerdo al siguiente formato de nombre: <numero_de_grupo>/<nombre_de_microservicio
