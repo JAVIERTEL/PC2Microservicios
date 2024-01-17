@@ -18,8 +18,10 @@ sudo apt install docker-compose
 
 Para la ejecución tendremos que clonar el repositorio en nuesta mv
 ```
-cd PC2Microservicios
 git clone https://github.com/JAVIERTEL/PC2Microservicios.git 
+```
+```
+cd PC2Microservicios
 ```
 Por último mediante:
 ```
