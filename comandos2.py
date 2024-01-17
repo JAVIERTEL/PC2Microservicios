@@ -13,7 +13,7 @@ run_command('docker run --rm -u root -v "$(pwd)":/home/gradle/project -w /home/g
 # Crear las imágenes de cada uno de los servicios de acuerdo al siguiente formato de nombre: <numero_de_grupo>/<nombre_de_microservicio
 run_command("docker build -t g47/product-page -f ./product-page/Dockerfile .")
 run_command("docker build -t g47/details -f ./details/Dockerfile .")
-run_command("docker build -t g47/ratings -f ./ratings/DockerFile .")
+run_command("docker build -t g47/ratings -f ./ratings/Dockerfile .")
 
 # Incluir la creación de las tres versiones del servicio de reviews. Para especificar la versión se hace uso de la variable de entorno SERVICE_VERSION cuyos valores pueden ser v1, v2 o v3
 #Review v1 => Sin estrellas 
