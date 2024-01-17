@@ -8,8 +8,7 @@ COPY ./practica_creativa2/bookinfo/src/ratings/* /opt/microservices/
 ENV SERVICE_VERSION=v1
 #Copiar los ficheros package.json y rating.js a la ruta /opt/microservices/
 WORKDIR /opt/microservices/
-COPY package.json .
-COPY ratings.js .
+
 # Instalar las dependencias
 RUN npm install
 # Exponer el puerto 9080 
