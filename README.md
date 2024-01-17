@@ -14,8 +14,9 @@ sudo apt install docker-compose
 
 3.4 Por último un fichero llamado comando2.py para crear las imágenes y construir los contenedores. 
 
-Para la ejecución tendremos que clonar
+Para la ejecución tendremos que clonar 
 ```
+cd PCPC2Microservicios
 git clone https://github.com/JAVIERTEL/PC2Microservicios.git 
 ```
 Por último mediante:
