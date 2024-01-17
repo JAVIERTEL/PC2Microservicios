@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  product-page:
+    image: "g47/product-page"
+    container_name: "g47-product-page"
+    ports:
+      - "9080:9080"
+    
+  details:
+    image: "g47/details"
+    container_name: "g47-details"
+    
+  reviews-v1:
+    image: "g47/reviews-v1"
+    container_name: "g47-reviews-v1"
+    environment:
+      ENABLE_RATINGS: "true"
+
+  # reviews-v2:
+  #   image: "g47/reviews-v2"
+  #   container_name: "g47-reviews-v2"
+  #   environment:
+  #     ENABLE_RATINGS: "true"
+
+
+  # reviews-v3:
+  #   image: "g47/reviews-v3"
+  #   container_name: "g47-reviews.v3"
+  #   environment:
+  #     ENABLE_RATINGS: "true"
+
+  ratings:
+    image: "g47/ratings"
+    container_name: "g47-ratings"
+    
