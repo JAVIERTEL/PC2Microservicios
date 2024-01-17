@@ -7,7 +7,7 @@ WORKDIR /opt/microservices/
 COPY package.json .
 COPY ratings.js .
 #Especificar la variable de entorno SERVICE_VERSION con valor v1
-ENV SERVICE_VERSION v1
+ENV SERVICE_VERSION=v1
 # Instalar las dependencias
 RUN npm install
 # Exponer el puerto 9080 
