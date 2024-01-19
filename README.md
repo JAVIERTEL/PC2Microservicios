@@ -15,7 +15,7 @@ sudo apt install docker-compose
 3.2 A continuación creamos cuatro ficheros DockerFile uno para cada microservicio en el idioma exigido. En el caso del DockerFile de java ya venía hecho y tan solo hemos modificado la línea COPY para referenciar de forma correcta al directoria de nuestra app. 
 
 
-3.3 Después hemos programado el fichero docker-compose.yml describe cómo deben ejecutarse los contenedores, qué imágenes usar, qué puertos exponer, qué variables de entorno establecer, entre otras configuraciones. 
+3.3 Después hemos programado el fichero docker-compose.yml describe cómo deben ejecutarse los contenedores, qué imágenes usar, que puertos exponer, qué variables de entorno establecer, entre otras configuraciones. 
 
   
 3.4 Por último un fichero llamado comando2.py para crear las imágenes y construir los contenedores. 
